@@ -1,0 +1,14 @@
+.FiltersPanel {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 0.1fr;
+  gap: 2em;
+  align-items: center;
+
+  &__reset {
+    color: inherit;
+    cursor: pointer;
+  }
+}
+

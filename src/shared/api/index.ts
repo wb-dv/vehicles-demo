@@ -1,0 +1,1 @@
+export { createGQLQuery } from './createGQLQuery';

@@ -1,0 +1,61 @@
+@import './normalize.scss';
+@import './fonts.scss';
+@import './animation.scss';
+@import '@shared/ui/vars.scss';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+  @include scrollbar;
+}
+
+body {
+  background-color: var(--dark);
+
+  font-family: 'Montserrat';
+  font-weight: normal;
+  line-height: normal;
+  color: var(--white);
+
+  overflow: hidden auto;
+
+  @include scrollbar;
+}
+
+:root {
+  --violet: #7300cc;
+  --violet-shadow: rgba(116, 0, 204, 0.5);
+  --blue: #3a6df6;
+
+  --dark: #222222;
+  --dark-light: #333333;
+  --gray: #a3a3a3;
+  --white: #fff;
+
+  --bg: #eaf1f5;
+  --bg-black: #343759;
+  --bg-black-light: #3f436d;
+  --bg-black-dark: #2c2e4a;
+
+  --bg-gray: #eee;
+  --bg-red: #ff6d6d;
+
+  --gradient: linear-gradient(263deg, #315fdd 0%, #7500cb 100%);
+
+  --border-radius: 30px;
+
+  --font-size-title: 48px;
+  --font-size-title-tab: 28px;
+  --font-size-title-mob: 24px;
+
+  --font-size-description: 12px;
+  --font-size-description-tab: 16px;
+  --font-size-description-mob: 10px;
+
+  --font-primary: 'Montserrat';
+
+  --duration: 0.3s;
+  --duration-slow: 1s;
+}

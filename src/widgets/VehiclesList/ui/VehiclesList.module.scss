@@ -1,0 +1,15 @@
+.VehiclesList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2em;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__placeholder {
+    width: 100%;
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,64 @@
+$dark: #222222;
+$white: #fff;
+$gray: #a3a3a3;
+$bg-gray: #eee;
+
+$big-xxl: 1728;
+$big-r: 1451;
+
+$desm-r: 1383;
+
+$desm-m: 1179;
+$desmm-r: 1179;
+$tab-r: 1100;
+$mtab-r: 992;
+$smtab-r: 840;
+$stab-r: 768;
+$xstab-r: 660;
+$bmob-r: 576;
+$mmob-r: 450;
+$smob-r: 400;
+$xsmob-r: 350;
+
+@mixin adpt-min($width) {
+  @media (min-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin adpt-max($width) {
+  @media (max-width: #{$width}px) {
+    @content;
+  }
+}
+
+@mixin adpt-tab {
+  @media (max-width: #{$stab-r}px) {
+    @content;
+  }
+}
+
+@mixin adpt-mob {
+  @media (max-width: #{$bmob-r}px) {
+    @content;
+  }
+}
+
+@mixin scrollbar($size: 12px, $foreground-color: $gray, $background-color: transparent, $border-radius: 7px) {
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+    border-radius: $border-radius;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+    border-radius: $border-radius;
+  }
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+    border-radius: $border-radius;
+  }
+
+  scrollbar-width: thin;
+  scrollbar-color: $foreground-color $background-color;
+}

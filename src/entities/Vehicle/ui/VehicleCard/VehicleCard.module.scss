@@ -1,0 +1,57 @@
+.VehicleCard {
+  display: flex;
+
+  width: 100%;
+  padding: 3em;
+
+  border-radius: var(--border-radius);
+  background-color: var(--bg-black);
+
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
+    align-items: baseline;
+    height: fit-content;
+
+    margin-right: 2em;
+  }
+
+  &__img {
+    display: block;
+    width: 50%;
+
+    flex-shrink: 0;
+
+    background-color: var(--dark);
+    border-radius: var(--border-radius);
+  }
+
+  &__characteristics {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__characteristic {
+    display: flex;
+    align-items: center;
+
+    margin-right: 1em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  &__characteristicIcon {
+    display: block;
+    margin-left: 1em;
+  }
+
+  &__description {
+    color: #cecece;
+  }
+}
+

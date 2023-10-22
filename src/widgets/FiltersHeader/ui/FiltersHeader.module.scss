@@ -1,0 +1,21 @@
+.FiltersHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  padding: 1.5em 0;
+
+  background-color: var(--dark-light);
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__filters {
+    max-width: 1100px;
+  }
+}
+

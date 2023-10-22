@@ -1,0 +1,48 @@
+.MySelect {
+  &__wrapper {
+    position: relative;
+  }
+
+  &__control {
+    min-height: 50px !important;
+
+    background-color: transparent !important;
+    border: 1px solid #eee !important;
+    border-radius: 10px !important;
+
+    transition: background-color var(--duration), border var(--duration);
+  }
+
+  &__input {
+    color: var(--white) !important;
+  }
+
+  &__single-value {
+    color: var(--white) !important;
+  }
+
+  &__value-container {
+    cursor: text !important;
+  }
+
+  &__menu {
+    background-color: var(--bg-black) !important;
+  }
+
+  &__indicator {
+    cursor: pointer !important;
+  }
+
+  &__option {
+    cursor: pointer !important;
+
+    &--is-focused {
+      background-color: var(--bg-black-light) !important;
+    }
+
+    &--is-selected {
+      background-color: var(--bg-black-dark) !important;
+    }
+  }
+}
+
